@@ -1,0 +1,21 @@
+{
+  "name": "playwright_automation",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "mahin_ahmed",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --headed",
+    "getReport": "allure generate ./allure-results --clean && allure open ./allure-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.5"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.37.0",
+    "allure-playwright": "^3.6.0"
+  }
+}
